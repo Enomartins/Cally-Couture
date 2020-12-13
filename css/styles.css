@@ -225,6 +225,10 @@ body {
       justify-content: center;
       flex-wrap: wrap;
   }
+  .catalogue .left li {
+      color: purple !important;
+      font-weight: bold;
+  }
   .left {
       /* min-width: 40%; */
       text-align: center;
@@ -236,6 +240,7 @@ body {
       justify-content: center;
       flex-wrap: wrap;
       list-style: none;
+      margin-bottom: 3em;
   }
   .left li {
       padding: 0 1em;
@@ -249,6 +254,7 @@ body {
   .left li {
       font-size: large;
   }
+  
 
   .left button {
       background-color: purple;
@@ -257,7 +263,7 @@ body {
       border-radius: 2em;
       color: white;
       font-size: 1.5em;
-      margin-top: 3em;
+      margin-top: 1em;
   }
   
   button{
