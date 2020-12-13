@@ -1,0 +1,382 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.brand h2 {
+    margin: 1em 0;
+    
+    color: rgb(245, 6, 245) !important;
+    font-size: xx-large;
+    padding-left: 20px;
+    animation: brand-nimation 1s ease-in-out 1s;
+    animation-fill-mode: forwards;
+    transform: translateX(-1000%);
+}
+
+@keyframes brand-nimation {
+    0%{
+        transform: translateX(-1000%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+.brand a:hover {
+    text-decoration: none;
+}
+
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    background-color: purple;
+    padding: 0em 1em;
+    flex-wrap: wrap;
+    transform: translateY(-100%);
+    animation: head-nimation 1s ease-in-out 500ms;
+    animation-fill-mode: forwards;
+}
+
+@keyframes head-nimation {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+.hambugger {
+    display: none;
+    background-color: transparent;
+    border: 0;
+    color: white !important;
+    font-size: 25px;
+}
+
+.hambugger:focus, .hambugger:active {
+    outline: none;
+}
+
+.link-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+.navigation ul {
+    margin: 1em 0;
+}
+
+.link-list li a{
+    margin: 0 1em;
+    text-decoration: none;
+    font-weight: bolder;
+    color: white !important;
+}
+.links, .brand {
+    margin: auto 0;
+}
+.links {
+    animation: link-nimation 1s ease-in-out 1s;
+}
+@keyframes link-nimation {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+
+
+ h1 {
+    font-size: 50px;
+    font-weight: lighter;
+}
+
+.carousel img {
+    max-height: 70vh;
+    object-fit: cover;
+}
+
+.carousel {
+    animation: caro-nimation 1s ease-in-out 1.5s;
+    transform: translateX(100%);
+    animation-fill-mode: forwards;
+}
+
+@keyframes caro-nimation {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+
+.container {
+    background-color: rgb(233, 190, 233);
+}
+
+.showcase {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+    text-align: center;
+    margin: auto;
+    
+}
+
+.title {
+    text-align: center;
+    padding-top: 3em;
+    color: purple;
+    margin: 2em;
+}
+.title h2 {
+    color: black;
+}
+.title p {
+    margin: 0 30%
+
+}
+
+.showcase img {
+    width: 100%;
+    max-width: 250px;
+}
+.showcase .item {
+    margin: 2em;
+}
+
+/* social media */
+.connect {
+    text-align: center;
+    padding: 2em;
+    background-color: rgb(233, 190, 233);
+}
+.connect p, .connect h2{
+    color: white;
+    padding: 1em;
+}
+.contact-button button {
+    margin: 1em;
+    font-size: 2em;
+    padding: 10px 100px;
+    color: white;
+    background-color: rgb(187, 0, 156);
+    border: none!important;
+}
+.fa {
+    padding: 15px;
+    font-size: 20px !important;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 40%;
+    margin: 0 0.5em;
+  }
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.7;
+  }
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  /* Twitter */
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  .fa-youtube {
+    background: #bb0000;
+    color: white;
+  }
+  
+  /* Twitter */
+  .fa-instagram {
+    background: #125688;
+    color: white;
+  }
+  .fa-whatsapp {
+    background: #01e675;
+    color: white;
+  }
+  
+  /* Twitter */
+  .fa-google {
+    background: #dd4b39;
+    color: white;
+  }
+
+  .catalogue {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      flex-wrap: wrap;
+  }
+  .left {
+      /* min-width: 40%; */
+      text-align: center;
+      padding: 1em auto;
+      margin: auto;
+  }
+  .left ul{
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      list-style: none;
+  }
+  .left li {
+      padding: 0 1em;
+      text-align: center;
+  }
+
+  .left h1 {
+      color: purple;
+      margin-bottom: 1em;
+  }
+  .left li {
+      font-size: large;
+  }
+
+  .left button {
+      background-color: purple;
+      padding: 10px 20px;
+      border: none!important;
+      border-radius: 2em;
+      color: white;
+      font-size: 1.5em;
+      margin-top: 3em;
+  }
+  
+  button{
+      transition: all 1s ease-in;
+  }
+
+  img {
+    transition: all 1s ease-in;
+  }
+
+  .services img:hover, .showcase img:hover {
+    transform: scale(1.5);
+  }
+
+  button:hover {
+      transform: rotateY(360deg)
+  }
+
+  .pics-wrap {
+      display: flex;
+      justify-content: center;
+      margin-top: 3em;
+      flex-wrap: wrap;
+  }
+  .right img {
+      max-width: 300px;
+      width: 100%;
+      object-fit: cover;
+  }
+  .left, .right  {
+      padding: 2em;
+      margin: 2em;
+  }
+
+  .services {
+      margin: 3em 0;
+  }
+
+  .services-lead {
+      padding: 30px 50px !important;
+      min-width: 40%;
+      /* margin: auto; */
+      align-self: center;
+      text-align: center;
+      color: rgb(99, 8, 99);;
+  }
+  .service-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+  }
+  .service {
+      margin: auto 2em;
+      padding: 1em;
+  }
+  .service img {
+      max-width: 180px;
+      object-fit: cover;
+  }
+
+  .contact {
+      display: flex;
+      justify-content: center;
+      background-color: purple;
+      flex-wrap: wrap;
+      padding: 5em 0;
+  }
+
+  .contact .fa {
+    color: white;
+  }
+  .contact span {
+      display: block;
+      margin: 10px auto;
+      text-align: center;
+  }
+  .contact h3, .contact p, .contact h4 {
+      margin: 0;
+      text-align: center;
+      color: white;
+  }
+  .contact .item {
+      margin: 3em;
+  }
+
+  footer {
+      background-color: black;
+      color: white;
+  }
+  footer .developer {
+      text-align: center;
+      padding: 1em 0;
+  }
+  .developer p {
+      margin: 0;
+  }
+
+  .contact a:hover, .developer a:hover {
+      text-decoration: none;
+      color: black;
+  }
+
+
+
+
+
+
+
+
+  @media screen and (max-width: 930px){
+    .navigation .links{
+        display: none;
+    }
+    .navigation .show {
+        display: block;
+    }
+    .hambugger {
+        display: block;
+    }
+
+
+  }
